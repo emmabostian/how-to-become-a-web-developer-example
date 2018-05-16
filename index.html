@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- IMPORT CSS & CSS FRAMEWORK CDN HERE -->
+  <link rel="stylesheet" href="./main.css">
+  <title>Course Scheduler</title>
+</head>
+<body>
+  <div class"overlay"></div>
+  <header class="header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <img class="logo" src="./images/course-scheduler.svg" alt="Course Scheduler">
+          <div class="navbar-start">
+            <a class="navbar-item" href="#">
+              Dashboard
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#">
+                Courses
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="#">
+                  Search Courses
+                </a>
+                <a class="navbar-item" href="#">
+                  My Courses
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <img class="user-icon" src="./images/user-icon.svg" alt="User icon">
+  </header>
+  <main>
+    <div class="dashboard--left">
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Courses</a></li>
+          <li class="is-active"><a href="#">My Courses</a></li>
+        </ul>
+      </nav>
+      <h1 class="title">My Courses</h1>
+      <table class="course-table table">
+        <thead>
+          <tr>
+            <td>Course Name</td>
+            <td>Professor</td>
+            <td>Time</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Java 101</td>
+            <td>Brown</td>
+            <td>MWF 9:00 - 12:00</td>
+          </tr>
+          <tr>
+            <td>UX Design</td>
+            <td>Reid</td>
+            <td>TR 14:00 - 15:30</td>
+          </tr>
+          <tr>
+            <td>Accounting</td>
+            <td>Miller</td>
+            <td>MWF 16:00 - 19:00</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="button is-primary add-course__btn">+ Add Course</button>
+    </div>
+    <div class="dashboard--right">
+      <article class="message is-dark">
+      <div class="message-header">
+        <p>Dark</p>
+        <button class="delete" aria-label="delete"></button>
+      </div>
+      <div class="dashboard__welcome">
+        Welcome to your course page!  If you'd l ike to add a new course click the Add Course button below the table.  To view more details about each course, click the course name.
+      </div>
+    </div>
+  </main>
+  
+  <section class="add-course-modal">
+    <div class="add-course-modal__header">
+      <h3>Add a Course</h3>
+    </div>
+    <aside class="menu course-selection">
+      <ul class="course-selection__list">
+        <label class="checkbox">
+          <input type="checkbox">
+          Binary 100
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Binary 200
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Programming in COBOL
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Intro to UX
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          Intro to AI
+        </label>
+      </ul>
+    </aside>
+    <div class="add-course-modal-btn-bar">
+      <button class="button is-primary is-outlined add-course-modal-btn close-modal">Cancel</button>
+      <button class="button is-primary add-course-modal-btn add-course-to-list">Add</button>
+    </div> 
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>
