@@ -1,0 +1,178 @@
+/** BASE STYLING **/
+
+html, body {
+  margin: 0;
+  overflow: hidden;
+}
+
+nav {
+  height: 75px;
+}
+
+main {
+  background-color: #f6f6f6;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  width: 100vw;
+}
+
+article {
+  margin-right: 150px;
+  box-shadow: -5px 5px 5px #d8d8d8;
+}
+
+thead td {
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #40d5bb;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  margin-left: 30px;
+  width: 150px;
+  height: 75px;
+}
+
+
+
+
+/** COURSE DASHBOARD STYLING **/
+
+.course-table {
+  width: 700px;
+  box-shadow: -5px 5px 5px #d8d8d8;
+  margin-left: 30px;
+}
+
+.dashboard--left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.title, .breadcrumb {
+  margin-left: 30px;
+}
+
+.breadcrumb {
+  padding-bottom: 10px;
+}
+
+.dashboard__welcome {
+  width: 400px;
+  padding: 10px;
+}
+
+.add-course__btn {
+  margin: 15px 0px 0px 30px;
+}
+
+/** HEADER STYLING **/
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  align-items: center;
+}
+
+
+/** ADD COURSE MODAL STYLING **/
+
+.add-course-modal {
+  position: absolute;
+  top: -250;
+  background: white;
+  width: 50vw;
+  height: 450px;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -5px 5px 5px #595859;
+  z-index: 99;
+  transition: all .3s ease-in-out;
+}
+
+.add-course-modal--visible {
+  top: 150px;
+}
+
+.add-course-modal__wrapper {
+  position: relative;
+}
+
+.add-course-modal__header {
+  background-color: #40d5bb;
+  color: white;
+  height: 50px;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.course-selection {
+  height: 300px;
+  width: 400px;
+  padding: 30px;
+}
+
+.course-selection__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  margin: 5px 0px;
+}
+
+.add-course-modal-btn-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.add-course-modal-btn {
+  margin: 0px 15px 15px 0px;
+}
+
+
+/** MISC STYLING **/
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 0;
+  z-index: 99;
+  background-color: #000000;
+  opacity: .5;
+}
+
+.overlay--visible {
+  height: 100%;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.user-icon:hover {
+  cursor: pointer;
+}
