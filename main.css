@@ -2,7 +2,7 @@
 
 html, body {
   margin: 0;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 nav {
@@ -40,7 +40,9 @@ button {
   height: 75px;
 }
 
-
+input[type="checkbox"] {
+  margin-right: 10px;
+}
 
 
 /** COURSE DASHBOARD STYLING **/
@@ -83,8 +85,14 @@ button {
   align-items: center;
 }
 
-.navbar {
+.nav__wrapper {
+  display: flex;
   align-items: center;
+  height: 100%;
+}
+
+.navbar-start {
+
 }
 
 
@@ -175,4 +183,17 @@ button {
 
 .user-icon:hover {
   cursor: pointer;
+}
+
+.message {
+  transition: all .1s ease-out;
+}
+
+.message--invisible {
+  opacity: 0;
+}
+
+.message--hidden {
+  position: absolute;
+  right: -90;
 }
