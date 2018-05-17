@@ -10,7 +10,7 @@
   <title>Course Scheduler</title>
 </head>
 <body>
-  <div class"overlay"></div>
+  <div class="overlay"></div>
   <header class="header">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -55,30 +55,14 @@
             <td>Time</td>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Java 101</td>
-            <td>Brown</td>
-            <td>MWF 9:00 - 12:00</td>
-          </tr>
-          <tr>
-            <td>UX Design</td>
-            <td>Reid</td>
-            <td>TR 14:00 - 15:30</td>
-          </tr>
-          <tr>
-            <td>Accounting</td>
-            <td>Miller</td>
-            <td>MWF 16:00 - 19:00</td>
-          </tr>
-        </tbody>
+        <tbody class="course-table__tbody"></tbody>
       </table>
       <button class="button is-primary add-course__btn">+ Add Course</button>
     </div>
     <div class="dashboard--right">
       <article class="message is-dark">
       <div class="message-header">
-        <p>Dark</p>
+        <p>Welcome</p>
         <button class="delete" aria-label="delete"></button>
       </div>
       <div class="dashboard__welcome">
@@ -92,32 +76,11 @@
       <h3>Add a Course</h3>
     </div>
     <aside class="menu course-selection">
-      <ul class="course-selection__list">
-        <label class="checkbox">
-          <input type="checkbox">
-          Binary 100
-        </label>
-        <label class="checkbox">
-          <input type="checkbox">
-          Binary 200
-        </label>
-        <label class="checkbox">
-          <input type="checkbox">
-          Programming in COBOL
-        </label>
-        <label class="checkbox">
-          <input type="checkbox">
-          Intro to UX
-        </label>
-        <label class="checkbox">
-          <input type="checkbox">
-          Intro to AI
-        </label>
-      </ul>
+      <ul class="course-selection__list"></ul>
     </aside>
     <div class="add-course-modal-btn-bar">
       <button class="button is-primary is-outlined add-course-modal-btn close-modal">Cancel</button>
-      <button class="button is-primary add-course-modal-btn add-course-to-list">Add</button>
+      <button class="button is-primary add-course-modal-btn add-course-to-list" disabled>Add</button>
     </div> 
   </section>
   <script src="./app.js"></script>
