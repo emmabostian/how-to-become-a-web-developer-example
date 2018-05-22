@@ -14,6 +14,5 @@ Clone this repository using `git clone https://github.com/ejbostian/kit-fed-exam
 
 ## Links
 
-**Check out the final example here**: https://ejbostian.github.io/how-to-become-a-web-developer-example/
-
-**Check out the presentation here**: https://ejbostian.github.io/how-to-become-a-web-developer/
+[Check the app out here](https://ejbostian.github.io/how-to-become-a-web-developer-example/) <br />
+[Check out the presentation]( https://ejbostian.github.io/how-to-become-a-web-developer/) <br />
